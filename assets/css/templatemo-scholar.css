@@ -771,7 +771,52 @@ Banner Style
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.5);
 }
+/*added*/
+@media (max-width: 768px) {
+  .main-banner {
+    padding: 100px 20px 60px 20px; /* Less vertical padding on small screens */
+  }
 
+  .main-banner .item {
+    padding: 40px 20px;     /* Reduce excessive padding */
+    margin-left: 0;         /* Remove horizontal offset */
+    background-size: cover; /* Better image coverage on small screens */
+  }
+
+  .main-banner .item h2 {
+    font-size: 24px;
+    line-height: 36px;
+    width: 100%;            /* Let text take full width */
+    margin-bottom: 20px;
+  }
+
+  .main-banner .item p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .main-banner .item span.category {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .main-banner .item .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .main-banner .item .buttons .main-button,
+  .main-banner .item .buttons .icon-button {
+    margin-right: 0;
+  }
+
+  .main-banner .owl-nav {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
 
 /* 
 ---------------------------------------------
