@@ -771,6 +771,7 @@ Banner Style
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.5);
 }
+
 /*added*/
 @media (max-width: 768px) {
   .main-banner {
@@ -1931,3 +1932,4 @@ body {
     width: 95%;
   }
 }
+
