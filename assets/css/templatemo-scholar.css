@@ -790,6 +790,13 @@ Banner Style
     width: 100%;            /* Let text take full width */
     margin-bottom: 20px;
   }
+  .main-banner .item h5 {
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  text-align: left; /* or center if you want centered text */
+  margin-bottom: 20px;
+}
 
   .main-banner .item p {
     font-size: 16px;
