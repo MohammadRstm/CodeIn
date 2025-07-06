@@ -646,6 +646,16 @@ Banner Style
   padding: 170px 0px 120px 0px;
 }
 
+.main-banner .item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+  border-radius: 25px;
+  padding: 100px 100px;
+  margin-left: 130px;
+  height: 500px;
+}
+
 .main-banner .item-1 {
   background-image: url(../images/banner-item-01.jpg);
 }
@@ -658,14 +668,6 @@ Banner Style
   background-image: url(../images/banner-item-03.jpg);
 }
 
-.main-banner .item {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size:contain;
-  border-radius: 25px;
-  padding: 100px 100px;
-  margin-left: 130px;
-}
 
 
 .main-banner .item span.category {
@@ -677,66 +679,29 @@ Banner Style
   border-radius: 20px;
   display: inline-block;
   margin-bottom: 50px;
+  top: -40px;
+  position: relative;
 }
 
 .main-banner .item h2 {
   font-size: 48px;
   font-weight: 700;
-  color: #fff;
   line-height: 70px;
   width: 60%;
   margin-bottom: 40px;
+  color: #f1f0fe;
+  top: -70px;
+  position: relative;
 }
 
-.main-banner .item p {
-  color: #fff;
-  width: 65%;
+.main-banner .item h5{
+   top: -100px;
+  position: relative;
 }
 
-.main-banner .item-1 h2 ,
-.main-banner .item-1 p{
-  color: #1e1e1e;
-}
-
-
-.main-banner .item .buttons {
-  display: flex;
-  margin-top: 50px;
-}
-
-.main-banner .item .buttons .main-button {
-  margin-right: 30px;
-}
-
-.main-banner .item .buttons .main-button a {
-  font-size: 14px;
-  color: #7a6ad8;
-  background-color: #fff;
-  display: inline-block;
-  height: 50px;
-  line-height: 50px;
-  padding: 0px 25px;
-  border-radius: 25px;
-  font-weight: 500;
-}
-
-.main-banner .item .buttons .icon-button i {
-  color: #7a6ad8;
-  background-color: #fff;
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-  font-size: 16px;
-}
-
-.main-banner .item .buttons .icon-button a {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
+.main-banner .item-2 h5{
+   top: -70px;
+  position: relative;
 }
 
 .main-banner .owl-nav {
@@ -790,13 +755,51 @@ Banner Style
     width: 100%;            /* Let text take full width */
     margin-bottom: 20px;
   }
-  .main-banner .item h5 {
+.main-banner .item h5,
+.main-banner .item .shadow-box {
   font-size: 14px;
   line-height: 24px;
   width: 100%;
-  text-align: left; /* or center if you want centered text */
+  text-align: left; /* or center */
   margin-bottom: 20px;
+  left: -10px;
 }
+
+
+
+.main-banner .item-1 h5{
+   top: -90px;
+}
+.main-banner .item-1 span.category{
+  top:-50px;
+}
+.main-banner .item-2 h2{
+   top: -60px;
+
+}
+.main-banner .item-2 h5{
+   top: -60px;
+}
+.main-banner .item-2 span.category{
+  top:-50px;
+}
+.main-banner .item-3 h2{
+   top: -60px;
+
+}
+.main-banner .item-3 h5{
+   top: -60px;
+}
+.main-banner .item-3 span.category{
+  top:-50px;
+}
+
+.main-banner .item .header-text {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 
   .main-banner .item p {
     font-size: 16px;
