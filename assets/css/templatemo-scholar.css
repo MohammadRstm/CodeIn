@@ -1027,11 +1027,13 @@ Courses Style
 .events_item .thumb {
   position: relative;
   border-radius: 25px;
+  align-items: center;
   overflow: hidden;
 }
 
 .events_item .thumb img {
   margin-bottom: -5px;
+  height: 270px;
 }
 
 .events_item .thumb span.category {
