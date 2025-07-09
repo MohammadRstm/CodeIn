@@ -16,28 +16,28 @@ body {
   color: white;
   padding: 20px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
-  text-align: center;
+  gap: 20px;
+  flex-wrap: nowrap; /* Prevent stacking */
+  overflow-x: auto;  /* Prevent overflow on very small screens */
 }
 
-.header .academy-name {
+.header .academy-name,
+.header .course-credits {
   font-weight: bold;
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 .header .course-title {
-  flex: 1;
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
-}
-
-.header .course-credits {
-  font-size: 1.2rem;
-  font-weight: bold;
+  flex: 1;
+  white-space: nowrap;
 }
 
 /* Course content box */
@@ -82,25 +82,8 @@ body {
   font-size: 0.96rem;
 }
 
-/* Responsive design */
+/* Responsive design (not changing header layout now) */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .header .course-title {
-    order: 1;
-    font-size: 1.5rem;
-  }
-
-  .header .academy-name,
-  .header .course-credits {
-    order: 2;
-    font-size: 1.1rem;
-  }
-
   .course-description,
   .chapter-detail {
     font-size: 1rem;
