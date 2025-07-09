@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -16,27 +17,30 @@ body {
   color: white;
   padding: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width:100%;
   align-items: center;
+  justify-content: center;
+  position: relative;
   border-radius: 10px;
-  text-align: center;
 }
 
 .header .academy-name {
+  position: absolute;
+  color: white;
+  left: 20px;
+  bottom: 15px;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .header .course-title {
-  flex: 1;
   font-size: 1.8rem;
   font-weight: bold;
-  text-align: center;
 }
-
 .header .course-credits {
-  font-size: 1.2rem;
+  position: relative;
+  left: 12.5cm;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -60,7 +64,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* Chapter styling */
 .chapter-box {
   background-color: #ffffff;
   padding: 20px;
@@ -81,35 +84,10 @@ body {
   color: #555;
   font-size: 0.96rem;
 }
-
-/* Responsive design */
 @media (max-width: 768px) {
-  .header {
+  .container {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .header .course-title {
-    order: 1;
-    font-size: 1.5rem;
-  }
-
-  .header .academy-name,
-  .header .course-credits {
-    order: 2;
-    font-size: 1.1rem;
-  }
-
-  .course-description,
-  .chapter-detail {
+    text-align: center;
     font-size: 1rem;
-    text-align: justify;
   }
-}
-
-/* Link styling */
-a {
-  text-decoration: none;
-  color: inherit;
 }
